@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYNYXMTV2X"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EYNYXMTV2X');
+      </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Big Mac Index</title>
+
+  </head>
+  <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h2 class="display-5 fw-bold">Big Mac Index</h2>
+                      
+                      <table align="center" width= 45%>
+                        <tr>
+                          <td>Big Mac Infographic</td>
+                          <td>Country Flag</td>
+                          <td>Country Name</td>
+                          <td>Exchange Value</td>
+                        <td>Notes</td>
+                        </tr>
+                        <tr>
+                           <td width="30%">{{data[1]}}</td>
+                          <td><img src={{ data[0]['flag'] }}  width="40"></td>
+                            <td>{{data[0]['country_name']}}</td>
+                          <td>{{currSymbols[0]}}{{"%.2f"|format(data[0]['dollar_ex'])}}</td>
+                          <td><p>You can buy {{data[2]}} burger/s in {{data[0]['country_name']}} for 1.00 USD</p></td>
+                        </tr><tr>  
+                          <td width="30%"> {{data[4]}}</td>
+                         <td><img src={{ data[3]['flag'] }}  width="40"></td>
+                          <td>{{data[3]['country_name']}}</td>
+                           <td>{{currSymbols[1]}} {{"%.2f"|format(data[3]['dollar_ex'])}}</br></td>
+                      <td><p>
+              You can buy {{data[5]}} burger/s in {{data[3]['country_name']}} for 1.00 USD.</p> 
+                           </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-right: 10px" width="30%">{{data[7]}}</td>
+                           <td><img src={{ data[6]['flag'] }}  width="40"></img></td> 
+                          <td>{{data[6]['country_name']}}</td> 
+                          <td>{{currSymbols[2]}} {{"%.2f"|format(data[6]['dollar_ex'])}}</td>    
+                         <td> <p>
+             You can buy {{data[8]}} burger/s in {{data[6]['country_name']}} for 1.00 USD .</p>   
+                         </td></tr>
+                          <tr>
+                      <td style="padding-right: 10px" width="30%">{{data[10]}}</td>
+                             
+                        <td><img src={{ data[9]['flag'] }}  width="40"></td>
+                      <td>{{data[9]['country_name']}}</td> 
+                        <td>{{currSymbols[3]}} {{  "%.2f"|format(data[9]['dollar_ex']) }}</td>
+           <td>
+<br><p>
+              You can buy {{data[11]}} burger/s in {{data[9]['country_name']}} for 1.00 USD.</p>
+                           </td>
+ 
+                        </tr>
+
+                        <tr>
+                         
+                        </tr>
+                      </table>
+                     
+                        </div>
+
+                       <a class="btn btn-primary btn-lg" href="#!">Call to action</a>
+                    
+                    </div>
+                </div>
+            </div>
+        </header>

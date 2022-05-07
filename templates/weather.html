@@ -1,0 +1,40 @@
+<!doctype html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="static/assets/js/main.js"></script>
+	<title>Weather</title>
+
+</head>
+
+<html>
+  <body>
+    <center>
+    <form action="/weather" method = "POST">
+    City Name:
+    <input type = text name="city" width = "100"><br><br>
+    
+    <button type="submit" value="submit">How's the Weather? </button>2
+    </form>
+	  {%if Temp%}
+      <p>Outside Temperature is {{Temp}} degree celcius </p>
+    {%endif%}
+    	<ul class="actions">
+						<!--<li><a href="#" class="button primary icon solid fa-download">Download</a></li>-->
+                        <li><a href="/" class="button">Home</a></li>
+                        <li><a href="/exp" class="button">Work Experience</a></li>
+                        <li><a href="/edu" class="button">Education</a></li> 
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYNYXMTV2X"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EYNYXMTV2X');
+      </script>
+
+    
+    </center>
+  </body>
+</html>

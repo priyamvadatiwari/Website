@@ -1,0 +1,49 @@
+<!doctype html>
+
+<head>
+    <title>💻 BMI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<html>
+  <body class="is-preload">
+    <center>
+    <form action="/bmi" method = "POST">
+    Weight(kgs) 
+    <input type = text name="weight" height: 10px width: 80px><br>
+    Height(cm)
+     <input type = text name="height"><br>
+     <button type="submit" value="submit">Calculate BMI </button>
+    </form>
+	  {%if bmi%}
+      <p>Your BMI is {{bmi}}</p>
+    {%endif%}
+    	<ul class="actions">
+						<!--<li><a href="#" class="button primary icon solid fa-download">Download</a></li>-->
+                        <li><a href="/" class="button">Home</a></li>
+                        <li><a href="/exp" class="button">Work Experience</a></li>
+                        <li><a href="/edu" class="button">Education</a></li> 
+
+    
+    </center>
+    	<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYNYXMTV2X"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EYNYXMTV2X');
+      </script>
+  </body>
+</html>
